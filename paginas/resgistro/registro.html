@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+    <script type="module" src="registrar.js"></script>
+
+</head>
+<body>
+    
+    <form>
+
+        <div>
+            
+            <div><label>email</label></div>
+            <input type="email" placeholder="seu@email.com" onchange="onChangeEmail()" id="email"/>
+
+        </div>
+
+        <div class="form-field">
+
+            <div><label>Senha</label></div>
+            <input type="password" placeholder="Senha"
+                id="password" onchange="onChangePassword()"/>
+        </div>
+        <br>
+        <div>
+
+            <button onclick="register()">registrar</button>
+
+        </div>
+        <br>
+        <div>
+
+            <button onclick="back()">voltar</button>
+
+        </div>
+
+    </form>
+    
+</body>
+</html>
